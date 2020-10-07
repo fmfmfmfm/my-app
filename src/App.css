@@ -2,16 +2,21 @@
   margin: 0;
   padding: 0;
 }
-html{
-    line-height: 1.15;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
+.css-000 {
+  display: flex;
 }
-*, :after, :before {
-    box-sizing: inherit;
+html {
+  line-height: 1.15;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
 }
 .header {
   background-color: #20232a;
@@ -35,57 +40,63 @@ html{
   }
 }
 .css-001 {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.css-002{
-    height: 50px;
-    display: flex;
+.css-002 {
+  height: 50px;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 600px) {
+  .css-003 {
+    width: calc(100% / 6);
+  }
+}
+.css-003 {
+  display: flex;
+  margin-right: 10px;
+  height: 100%;
+}
+.css-004 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 979px) and (min-width: 600px) {
+  .css-004 a {
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  }
 }
-@media screen and (min-width:600px){
-    .css-003{
-        width: calc(100% / 6);
-    }
+.css-004 a {
+  color: #ffffff;
+  display: flex;
+  font-weight: 300;
+  text-decoration: none;
+  align-items: center;
+  background-color: transparent;
+  flex-direction: row;
+  height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  word-break: keep-all;
 }
-.css-003{
-    display: flex;
-    margin-right: 10px;
-    height: 100%;
+.css-004 a.active {
+  background: #fff;
 }
-.css-004{
-    display: flex;
-    height: 100%;
-    width: 100%;
+.css-005 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
 }
-@media (max-width:979px) and (min-width:600px){
-    .css-004 a{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+.css-006 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
 }
-.css-004 a{
-    color: #ffffff;
-    display: flex;
-    font-weight: 300;
-    text-decoration: none;
-    align-items: center;
-    background-color: transparent;
-    flex-direction: row;
-    height: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-    word-break: keep-all;
-}
-.css-004 a.active{
-    background: #fff;
-}
-.css-005{
-    margin-top: 50px;
-}
-

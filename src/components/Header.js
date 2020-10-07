@@ -4,6 +4,9 @@ const Header = () =>{
   const lists = [
     {path:"/movie",listsdata:"电影"},
     {path:"/news",listsdata:"新闻"},
+    {path:"/news",listsdata:"新闻"},
+    {path:"/news",listsdata:"新闻"},
+    {path:"/news",listsdata:"新闻"},
   ]
   const {pathname} = useLocation()
     return (
