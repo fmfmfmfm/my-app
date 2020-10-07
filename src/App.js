@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Grommet } from "grommet";
+import News from "./components/News";
+import Header from "./components/Header";
+import Movie from "./components/Movie";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Grommet>
+        <Route exact component={Header} />
+        <div className="css-005">
+          <Route path="/News" component={News} />
+        </div>
+        <Route path="/movie" component={Movie} />
+      </Grommet>
+    </Router>
   );
-}
+};
 
 export default App;
